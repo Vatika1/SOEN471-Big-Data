@@ -19,7 +19,7 @@ Related Work -
 
 Materials and Methods-
 
-Dataset - The overall size of the data is 9.56 mb consisting of raw data (5.54 mb) and transformed data (4.03 mb). For this project, we will only focus on the transformed data as it does mot include irrelevant columns. The latest information on the economy is till October 18th, 2020. 
+Dataset - The overall size of the data is 9.56 mb consisting of raw data (5.54 mb) and transformed data (4.03 mb). We will be using the transformed dataset as it does not include irrelevant columns.  We will use 70% of this dataset to be the training data set and the remaining 30% will be used as the testing dataset. If after testing, the predicted results are still not close to the test data, we will increase the percentage of data included for training dataset to 80% and the testing dataset would be reduced to 20%. The dataset is available at "https://www.kaggle.com/shashwatwork/impact-of-covid19-pandemic-on-the-global-economy". The latest information on the economy is till October 18th, 2020. 
 
 Technologies - 
 
