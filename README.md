@@ -8,14 +8,12 @@ We will analyse the dataset and will perform predictive analysis on the dataset 
 
 Introduction :
 
-Context - This project is based on the data based on Covid pandemic. Covid has led to lockdowns which have had a very terrible effect on the GDP of the countries.
+The novel coronavirus ( Covid-19) has led to the economic downfall of countries around the world. Due to lockdowns, the economy of the countries has been badly affected. While some countries like New Zealand have successfully managed to control the virus, countries like Italy, US etc have not been able to manage the coronavirus and have imposed stringent lockdowns to control the virus which has led to a huge economic impact on the countries. So, in this project, we want to analyse the data of several countries collected during the Covid pandemic to predict the future GDP per capita.
 
-Objectives - The objective is to analyse the data and forecast the GDP of the countries in the coming days. This will also help us in predicting the future GDP patterns in case of another pandemic like situation. 
+In this project, we will be using multiple polynomial regression analysis that falls under the category of Supervised machine learning. This project is based on the data of several countries collected during the Covid pandemic. This data includes the daily extent of effect of Covid on countries including human development index, number of people dead, number of total cases for Covid, stringency_index (definition from google - It is a computable measure that indicates the effectiveness of a lockdown in the country), population and GDP per capita. The objective is to analyse the data (input - human development index, number of people dead, number of total cases for Covid, stringency_index and population and output - GDP per capita) of the countries and train the model using 80% of this data. Then, we will test our model using the remaining 20% of this data to check the accuracy of our model in predicting the GDP of the countries over the next few days. This will also help us in predicting the future GDP patterns in case of another pandemic like situation. 
 
-Presentation of problem to solve-
-In this project, we will be analysing the data to understand the gdp patterns based on covid impact on several countries starting from 31 dec 2019 and ending on 18th October 2020 to predict the future GDP patterns.
+Summary of tools and technologies to be used - We will be using multiple polynomial regression algorithm technique that falls under supervised machine learning. For language, we will be using python version 3.5. We will use the Scikit-learn library of python language.
 
-Related Work - 
 
 Materials and Methods-
 
