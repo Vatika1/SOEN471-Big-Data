@@ -39,4 +39,4 @@ Machine Learning Polynomial regression : https://www.w3schools.com/python/python
 Polynomial Regression With Scikit-learn : https://towardsdatascience.com/polynomial-regression-with-scikit-learn-what-you-should-know-bed9d3296f2
 
 Overfitting and Underfitting curves
-Overfitting and Underfitting With Machine Learning Algorithms (machinelearningmastery.com)
+https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/
