@@ -17,39 +17,9 @@ The novel coronavirus ( Covid-19) has led to the economic downfall of countries 
 In this project, we will be using two regression techniques - Random Forest Model and ARIMA Model, that fall under the category of Supervised machine learning. This project is based on the data of several countries collected during the Covid pandemic. This data includes the daily extent of effect of Covid on countries including human development index, number of people dead, number of total cases for Covid, stringency\_index (definition from google - It is a computable measure that indicates the effectiveness of a lockdown in the country), population and GDP per capita. The objective is to analyse the data (input - human development index, number of people dead, number of total cases for Covid, stringency\_index and population and output - GDP per capita) of the countries and train the model using 80% of this data. For testing purposes, we will test our model using the remaining 20% of this data to check the accuracy of our model in predicting the GDP of the countries over the next few weeks. This will also help us in predicting the future GDP patterns in case of another pandemic like situation. We will be using ARIMA time series and random forest regression algorithm techniques that fall under supervised machine learning. For language, we will be using python version 3.5. We will use the Scikit-learn library of python language.
 
 
+**Materials and Methods**
+The chosen dataset displays the impact of covid-19 on the global economy from December 2019 till October 2020 with the columns: iso code, country, date, total cases, total deaths, stringency index, gdp per capita, human development and population. The dataset is available at [Impact of Covid-19 Pandemic on the Global Economy | Kaggle](https://www.kaggle.com/shashwatwork/impact-of-covid19-pandemic-on-the-global-economy/) consists of raw data and transformed data with a total size of 9.56 MB. We will be using the transformed data for this project. Supervised machine learning techniques will be used because we want to predict the outcome of covid-19 on the global economy after October 2020. Algorithms to be used are the Random Forest and ARIMA model.**Random Forest Regression**, a supervised learning technique, is an Ensemble model made of many decision trees using random subsets of features, and average voting to make predictions. We used 3-fold Cross Validation of sklearn for hyperparameter tuning(num of trees, maxDepth).Another way to increase the accuracy of the results is to increase the percentage allocated to the training set and decrease the testing set. Overfitting and underfitting can cause poor performance of the algorithms. To avoid this, we use a 3-fold cross validation technique for the dataset. For start, we will allocate 80% to the training set and 20% to the testing set to analyze the data. However, depending on the accuracy of predictions, we may increase the percentage of training data. GDP per capita will be chosen as the dependent variable y. In the case of independent variables, human development index, stringency index, total cases, total deaths and population will be chosen.Lastly, **Scikit-learn**, a popular machine learning library for python will be used.Fortunately, python provides several methods to find relationships between data points. We used **Apache Spark** for the data analysis since it promotes parallelization.
 
-||
-| :- |
-|**Materials and Methods**|
-|The chosen dataset displays the impact of covid-19 on the global economy from|
-|December 2019 till October 2020 with the columns: iso code, country, date, total cases|
-|total deaths, stringency index, gdp per capita, human development and population. The|
-|dataset is available at [Impact of Covid-19 Pandemic on the Global Economy | Kaggle](https://www.kaggle.com/shashwatwork/impact-of-covid19-pandemic-on-the-global-economy/)|
-|consists of raw data and transformed data with a total size of 9.56 MB. We will be using|
-|the transformed data for this project.|
-|Supervised machine learning techniques will be used because we want to predict the|
-|outcome of covid-19 on the global economy after October 2020. Algorithms to be used|
-|are the Random Forest and ARIMA model.|
-|**Random Forest Regression**, a supervised learning technique, is an Ensemble model|
-|made of many decision trees using random subsets of features, and average voting to|
-|make predictions. We used 3-fold Cross Validation of sklearn for hyperparameter tuning|
-|(num of trees, maxDepth).|
-|Another way to increase the accuracy of the results is to increase the percentage|
-|allocated to the training set and decrease the testing set. Overfitting and underfitting can|
-|cause poor performance of the algorithms. To avoid this, we use a 3-fold cross|
-|validation technique for the dataset.|
-|For start, we will allocate 80% to the training set and 20% to the testing set to analyze|
-|the data. However, depending on the accuracy of predictions, we may increase the|
-|percentage of training data. GDP per capita will be chosen as the dependent variable y|
-|In the case of independent variables, human development index, stringency index, total|
-|cases, total deaths and population will be chosen.|
-|Lastly, **Scikit-learn**, a popular machine learning library for python will be used.|
-|Fortunately, python provides several methods to find relationships between data points|
-|We used **Apache Spark** for the data analysis since it promotes parallelization.|
-
-,
-
-. .
 
 **Results**
 
@@ -62,21 +32,22 @@ Let’s see the results for both the models - Random Forest and ARIMA model one-
 1. **Removed the rows containing duplicate values.**
 1. **Dataset split chosen** : 80 % Training Set and 20 % Test Set
 
-**Step 1: Loading the dataset** Loading Dataset
+**Step 1: Loading the dataset** 
+Loading Dataset
 
-![](images/loading_dataset1.png)![](images/loading_dataset_Res.jpeg)
+![](images/loading_dataset.jpeg)
 
 Output :
 
-![](images/data_preprocessing1.png)![](images/data_preprocessing_output.png)
+![](images/data_loaded.png)
 
 **Step 2 : Data Preprocessing** : We apply the data preprocessing as discussed earlier here to our dataset.
 
 Data Preprocessing:
 
-![](images/rmse.png)
+![](images/data_preprocessing.png)
 Output:
-
+![](images/preprocessed_data.png)
 
 **Metrics**
 
@@ -94,11 +65,19 @@ As we can see, we have used a 3-fold cross validation for getting the best hyper
 **Step 4: Evaluating our model** : Here we evaluate our model using the metrics defined earlier. i.e. RMSE and MSE.
 
 **RMSE** :
+![](images/rmse.png)
 
-Output : 0.014442395683858156 **MSE**:
+Output : 0.014442395683858156 
 
-Output : 0.00020858279308912472 **Graphical representation of Random Forest**
+**MSE**:
+![](images/mse.png)
 
+Output : 0.00020858279308912472 
+
+**Graphical representation of Random Forest**
+
+![](images/graph_code.png)
+![](images/prediction_graph.png)
 
 **Discussion**
 
