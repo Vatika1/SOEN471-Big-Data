@@ -45,11 +45,11 @@ Output :
 
 Data Preprocessing:
 
-![](images/data_preprocessing.png)
+![](images/data_preprocessing.jpeg)
 
 Output:
 
-![](images/preprocessed_data.png)
+![](images/preprocessed_data.jpeg)
 
 **Metrics**
 
@@ -63,6 +63,8 @@ We will be using the following two metrics for the evaluation of our model.
 **Step 3: Implementing the random forest:** Here we define our model using scikit-learn and use Machine Learning’s Cross Validation for hyper parameter tuning for random forest parameters(no. of decision trees , depth of trees etc)
 
 As we can see, we have used a 3-fold cross validation for getting the best hyperparameters for the Random Forest. This will ensure that our model’s results are good.
+
+![](images/implementation.jpeg)
 
 **Step 4: Evaluating our model** : Here we evaluate our model using the metrics defined earlier. i.e. RMSE and MSE.
 
@@ -93,6 +95,6 @@ The Random Forest Model gives very promising results. This might be because rand
 
 1. Overfitting and Underfitting curves [https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-lea rning-algorithms/](https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/)
 1. How regression analysis works: <https://towardsdatascience.com/how-regression-analysis-works-10f44c37b20a>
-1. https://www.analyticsvidhya.com/blog/2019/11/build-machine-learning-pipelines-p yspark/
+1. https://www.analyticsvidhya.com/blog/2019/11/build-machine-learning-pipelines-pyspark/
 1. [Classification and regression - Spark 3.1.1 Documentation](http://spark.apache.org/docs/latest/ml-classification-regression.html#random-forest-regression)
 1. [Random Forest Models With Python and Spark ML - Silectis](https://www.silect.is/blog/random-forest-models-in-spark-ml/)
