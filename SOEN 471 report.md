@@ -46,7 +46,9 @@ Output :
 Data Preprocessing:
 
 ![](images/data_preprocessing.png)
+
 Output:
+
 ![](images/preprocessed_data.png)
 
 **Metrics**
@@ -64,12 +66,16 @@ As we can see, we have used a 3-fold cross validation for getting the best hyper
 
 **Step 4: Evaluating our model** : Here we evaluate our model using the metrics defined earlier. i.e. RMSE and MSE.
 
-**RMSE** :
+**RMSE**
+
+
 ![](images/rmse.png)
 
 Output : 0.014442395683858156 
 
-**MSE**:
+**MSE**
+
+
 ![](images/mse.png)
 
 Output : 0.00020858279308912472 
