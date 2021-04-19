@@ -127,7 +127,10 @@ Since the dataset was non-stationary, we did differencing to make the dataset st
 
 ![](images/prediction.png)
 
-After searching alot about ARIMA Models, we came to conclusion that the dataset is not good enough to make a good analysis through ARIMA models because the dataset is only over 9 months period. Secondly, the GDP of each country remains the same throughout the 9 months. Since the GDP does not change, the **RMSE** through this model is 0.
+After searching alot about ARIMA Models, we came to conclusion that the dataset is not good enough to make a good analysis through ARIMA models because the dataset is only over 9 months period. Secondly, the GDP of each country remains the same throughout the 9 months, it did not lead to a good analysis and the **RMSE** through this model is 0.
+
+When we sorted the dates in the dataset, the graph did not look correct. This is not how time series plot is supposed to look like.
+![](images/wrong-graph.png)
 
 A second attempt was made by choosing a smaller dataset for only Afghanistan country. SInce the value of GDP remained the same, there was no good analysis done for the dataset and **RMSE** was still 0. Since the value of GDP remained the same, there was no good analysis done for the dataset and RMSE was still 0. The future GDP for Afghanistan remained 7.4977.
 
