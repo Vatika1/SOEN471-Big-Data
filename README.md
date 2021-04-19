@@ -129,16 +129,15 @@ Since the dataset was non-stationary, we did differencing to make the dataset st
 
 After searching alot about ARIMA Models, we came to conclusion that the dataset is not good enough to make a good analysis through ARIMA models because the dataset is only over 9 months period. Secondly, the GDP of each country remains the same throughout the 9 months. Since the GDP does not change, the **RMSE** through this model is 0.
 
-
-
-
-
+A second attempt was made by choosing a smaller dataset for only Afghanistan country. SInce the value of GDP remained the same, there was no good analysis done for the dataset and **RMSE** was still 0. Since the value of GDP remained the same, there was no good analysis done for the dataset and RMSE was still 0. The future GDP for Afghanistan remained 7.4977.
 
 
 
 **Discussion**
 
 The Random Forest Model gives very promising results. This might be because random forest models are really good for regression. The limitation of our work is that we have only trained and tested our model on a sub-sample of data, since the data was too large for computation by a small computer. We hope to further refine our model.
+
+On the second hand, ARIMA Model is a great model to perform time series analysis. However, since our dataset didn’t have good enough data and the GDP for each country remained exactly same, it didn’t analyze the results properly for this dataset. For ARIMA Models to do a good analysis, it is necessary for the GDP values to change over time. Also, it is necessary to have a dataset for a longer period of time.
 
 **References**
 
@@ -147,3 +146,4 @@ The Random Forest Model gives very promising results. This might be because rand
 1. https://www.analyticsvidhya.com/blog/2019/11/build-machine-learning-pipelines-pyspark/
 1. [Classification and regression - Spark 3.1.1 Documentation](http://spark.apache.org/docs/latest/ml-classification-regression.html#random-forest-regression)
 1. [Random Forest Models With Python and Spark ML - Silectis](https://www.silect.is/blog/random-forest-models-in-spark-ml/)
+2. https://www.analyticsvidhya.com/blog/2020/10/how-to-create-an-arima-model-for-time-series-forecasting-in-python/
