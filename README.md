@@ -117,7 +117,7 @@ Make predictions by functions provided by python pandas.
 
 Since the dataset was non-stationary, we did differencing to make the dataset stationary before jumping to making predictions. 
 
-![](images/differencingr.png)
+![](images/differencing.png)
 
 
 
@@ -125,6 +125,9 @@ Since the dataset was non-stationary, we did differencing to make the dataset st
 
 **Step 4: Make predictions by functions provided by python pandas.**
 
+![](images/prediction.png)
+
+After searching alot about ARIMA Models, we came to conclusion that the dataset is not good enough to make a good analysis through ARIMA models because the dataset is only over 9 months period. Secondly, the GDP of each country remains the same throughout the 9 months. Since the GDP does not change, the **RMSE** through this model is 0.
 
 
 
