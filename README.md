@@ -90,6 +90,53 @@ Output : 0.00020858279308912472
 ![](images/graph_code.png)
 ![](images/prediction_graph.png)
 
+ARIMA time series model
+
+Data Preprocessing
+Removing invalid data: It refers to the data that has null values. These rows that contain invalid data should be removed from the dataset to have a better trained model and to get rid of noise.
+Removing unnecessary columns : Dropped the columns code, country, HDI, total cases, total deaths, stringency index and population
+Hypothesis testing to check if data is stationary or non-stationary by dickey fuller test: The goal is to make the data stationary. If the data is non-stationary, we will perform differencing to reduce the P-value and make the dataset stationary.
+Make predictions by functions provided by python pandas.
+
+
+
+
+
+Step 1: Loading the dataset
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Step 2: Removing unnecessary columns: We drop all columns except date and GDP
+
+
+
+Step 3: Hypothesis testing to check if data is stationary or non-stationary by dickey fuller test
+
+
+
+
+
+Make predictions by functions provided by python pandas.
+
+
+
+
+
+
+
+
+
 **Discussion**
 
 The Random Forest Model gives very promising results. This might be because random forest models are really good for regression. The limitation of our work is that we have only trained and tested our model on a sub-sample of data, since the data was too large for computation by a small computer. We hope to further refine our model.
