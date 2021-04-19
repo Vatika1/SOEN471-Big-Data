@@ -102,32 +102,19 @@ Make predictions by functions provided by python pandas.
 
 
 
-Step 1: Loading the dataset
+**Step 1: Loading the dataset**
+![](images/arima_load_dataset.png)
+**Step 2: Removing unnecessary columns: We drop all columns except date and GDP**
+![](images/arima-drop-columns.png)
 
 
- 
-
-
-
-
-
-
+**Step 3: Hypothesis testing to check if data is stationary or non-stationary by dickey fuller test**
 
 
 
 
 
-Step 2: Removing unnecessary columns: We drop all columns except date and GDP
-
-
-
-Step 3: Hypothesis testing to check if data is stationary or non-stationary by dickey fuller test
-
-
-
-
-
-Make predictions by functions provided by python pandas.
+**Step 4: Make predictions by functions provided by python pandas.**
 
 
 
