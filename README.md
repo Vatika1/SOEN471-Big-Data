@@ -90,12 +90,13 @@ Output : 0.00020858279308912472
 ![](images/graph_code.png)
 ![](images/prediction_graph.png)
 
-ARIMA time series model
+**ARIMA time series model**
 
-Data Preprocessing
-Removing invalid data: It refers to the data that has null values. These rows that contain invalid data should be removed from the dataset to have a better trained model and to get rid of noise.
-Removing unnecessary columns : Dropped the columns code, country, HDI, total cases, total deaths, stringency index and population
-Hypothesis testing to check if data is stationary or non-stationary by dickey fuller test: The goal is to make the data stationary. If the data is non-stationary, we will perform differencing to reduce the P-value and make the dataset stationary.
+**Data Preprocessing**
+
+**1. Removing invalid data**: It refers to the data that has null values. These rows that contain invalid data should be removed from the dataset to have a better trained model and to get rid of noise.
+**2. Removing unnecessary columns** : Dropped the columns code, country, HDI, total cases, total deaths, stringency index and population
+**3. Hypothesis testing to check if data is stationary or non-stationary by dickey fuller test**: The goal is to make the data stationary. If the data is non-stationary, we will perform differencing to reduce the P-value and make the dataset stationary.
 Make predictions by functions provided by python pandas.
 
 
@@ -103,12 +104,20 @@ Make predictions by functions provided by python pandas.
 
 
 **Step 1: Loading the dataset**
+
 ![](images/arima_load_dataset.png)
+
 **Step 2: Removing unnecessary columns: We drop all columns except date and GDP**
 ![](images/arima-drop-columns.png)
 
 
 **Step 3: Hypothesis testing to check if data is stationary or non-stationary by dickey fuller test**
+
+![](images/dickey-fuller.png)
+
+Since the dataset was non-stationary, we did differencing to make the dataset stationary before jumping to making predictions. 
+
+![](images/differencingr.png)
 
 
 
